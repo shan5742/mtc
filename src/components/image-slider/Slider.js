@@ -54,7 +54,7 @@ const Slider = props => {
     let interval = null
 
     if (props.autoPlay) {
-      interval = setInterval(play, props.autoPlay * 1000)
+      interval = setInterval(play, props.autoPlay * 2000)
     }
 
     return () => {

@@ -1,7 +1,8 @@
 import React from "react"
-import Slider from "../components/slider/Slider"
+import Slider from "../components/image-slider/Slider"
 import ButtonPrimary from "../components/ButtonPrimary"
 import ButtonSecondary from "../components/ButtonSecondary"
+import GallerySection from "../components/gallery/GallerySection"
 
 const slides = [
   {
@@ -30,6 +31,7 @@ export default function Home() {
       <div style={{ height: 200, backgroundColor: "black" }}>
         <ButtonSecondary>goodbye</ButtonSecondary>
       </div>
+      <GallerySection />
     </div>
   )
 }
