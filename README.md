@@ -1,6 +1,6 @@
 # MTC Kitchens
 
-Live demo is [here](www.netlify.com)
+Live demo is [here](https://mtc-kitchens.netlify.app/)
 
 To run locally clone this repo and install the dependencies:
 
