@@ -16,7 +16,7 @@ export default function ImageWithCTA() {
           consequuntur, officia delectus aut ea, odio sequi hic. Accusantium, id
           quia?
         </Blurb>
-        <ButtonPrimary>about us</ButtonPrimary>
+        <ButtonPrimary style={{ width: 240 }}>about us</ButtonPrimary>
       </RightSide>
     </Container>
   )

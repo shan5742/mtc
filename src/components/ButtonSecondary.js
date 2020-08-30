@@ -15,6 +15,9 @@ const ButtonSecondary = styled.button`
     background-color: #ffffff;
     color: #000000;
   }
+  &:focus {
+    outline: none;
+  }
 `
 
 export default ButtonSecondary

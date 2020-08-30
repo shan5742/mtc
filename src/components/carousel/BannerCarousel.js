@@ -14,7 +14,10 @@ export default function BannerCarousel() {
           <ContentContainer>
             <SlideSubheading>{item.subheading}</SlideSubheading>
             <SlideHeading>{item.heading}</SlideHeading>
-            <ButtonPrimary style={{ marginBottom: 100 }}>
+            <ButtonPrimary
+              onClick={console.log("hello")}
+              style={{ marginBottom: 100 }}
+            >
               {item.buttonText}
             </ButtonPrimary>
           </ContentContainer>
@@ -25,7 +28,7 @@ export default function BannerCarousel() {
 }
 
 const Wrapper = styled.div`
-  height: 40vh;
+  min-height: 40vh;
   padding-top: 100px;
   background-image: url("${BannerNew}");
   background-size: cover;
@@ -43,6 +46,10 @@ const ContentContainer = styled.div`
   width: 50%;
   padding: 0 15%;
   flex-direction: column;
+  @media (max-width: 900px) {
+    width: 90%;
+    padding: 0 5%5%;
+  }
 `
 
 const SlideHeading = styled.h1`

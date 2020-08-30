@@ -10,9 +10,9 @@ export default function TestimonialCarousel() {
   const Arrow = ({ type, onClick, isEdge }) => {
     const pointer =
       type === consts.PREV ? (
-        <img alt="left-arrow" src={leftArrow} />
+        <ArrowImage alt="left-arrow" src={leftArrow} />
       ) : (
-        <img alt="right-arrow" src={rightArrow} />
+        <ArrowImage alt="right-arrow" src={rightArrow} />
       )
     return (
       <ArrowContainer onClick={onClick} disabled={isEdge}>
@@ -52,6 +52,9 @@ const ContentContainer = styled.div`
   width: 100%;
   padding: 0 15%;
   flex-direction: column;
+  @media (max-width: 550px) {
+    padding: 0 10px;
+  }
 `
 
 const SlideHeading = styled.h1`
@@ -64,7 +67,7 @@ const SlideHeading = styled.h1`
     font-size: 42px;
   }
   @media (max-width: 650px) {
-    font-size: 34px;
+    font-size: 28px;
   }
 `
 
@@ -93,8 +96,21 @@ const SlideText = styled.p`
 
 const ArrowContainer = styled.div`
   display: flex;
+  align-items: center;
   margin: 0 10%;
   @media (max-width: 1200px) {
     margin: 0 20px;
+  }
+  @media (max-width: 550px) {
+    margin: 0 5px;
+  }
+`
+
+const ArrowImage = styled.img`
+  height: 75px;
+  width: 75px;
+  @media (max-width: 1200px) {
+    height: 50px;
+    width: 50px;
   }
 `

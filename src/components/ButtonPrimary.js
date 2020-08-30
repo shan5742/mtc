@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const ButtonPrimary = styled.button`
   height: 60px;
-  width: ${props => (props.large ? "340px" : "240px")};
+  min-width: 240px;
   border-radius: 30px;
   color: ${props => (props.alternative ? "#d4b254" : "#ffffff")};
   background-color: ${props => (props.alternative ? "transparent" : "#d4b254")};
@@ -13,6 +13,9 @@ const ButtonPrimary = styled.button`
   cursor: pointer;
   &:hover {
     background-color: #c8a74b;
+  }
+  &:focus {
+    outline: none;
   }
 `
 
