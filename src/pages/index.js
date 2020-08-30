@@ -1,37 +1,21 @@
 import React from "react"
-import Slider from "../components/image-slider/Slider"
-import ButtonPrimary from "../components/ButtonPrimary"
-import ButtonSecondary from "../components/ButtonSecondary"
 import GallerySection from "../components/gallery/GallerySection"
+import ImageWithCTA from "../components/ImageWithCTA"
+import Footer from "../components/footer/Footer"
+import Nav from "../components/nav/Nav"
+import "../global/style.css"
+import BannerCarousel from "../components/carousel/BannerCarousel"
+import TestimonialCarousel from "../components/carousel/TestimonialCarousel"
 
-const slides = [
-  {
-    subheading: "design and order your new kitchen online today",
-    heading: "Bespoke & made to measure handmade kitchen design",
-    buttonText: "order now",
-  },
-  {
-    subheading: "design and order your new kitchen online today",
-    heading: "Bespoke & made to measure handmade kitchen design",
-    buttonText: "order now",
-  },
-  {
-    subheading: "design and order your new kitchen online today",
-    heading: "Bespoke & made to measure handmade kitchen design",
-    buttonText: "order now",
-  },
-]
-
-export default function Home() {
+export default function Index() {
   return (
     <div>
-      <div>Hello world!</div>
-      <Slider slides={slides} />
-      <ButtonPrimary>Hello</ButtonPrimary>
-      <div style={{ height: 200, backgroundColor: "black" }}>
-        <ButtonSecondary>goodbye</ButtonSecondary>
-      </div>
+      <Nav />
+      <BannerCarousel />
+      <ImageWithCTA />
+      <TestimonialCarousel />
       <GallerySection />
+      <Footer />
     </div>
   )
 }

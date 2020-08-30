@@ -1,9 +1,8 @@
-import React from "react"
-import styled from "@emotion/styled"
+import styled from "styled-components"
 
 const ButtonPrimary = styled.button`
   height: 60px;
-  min-width: 240px;
+  width: ${props => (props.large ? "340px" : "240px")};
   border-radius: 30px;
   color: ${props => (props.alternative ? "#d4b254" : "#ffffff")};
   background-color: ${props => (props.alternative ? "transparent" : "#d4b254")};

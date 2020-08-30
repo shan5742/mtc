@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "@emotion/styled"
+import styled from "styled-components"
 import galleryKitchen1 from "../../images/galleryKitchen1.png"
 import galleryKitchen2 from "../../images/galleryKitchen2.png"
 import galleryKitchen3 from "../../images/galleryKitchen3.png"
@@ -44,6 +44,12 @@ const Image = styled.img`
   height: auto;
   margin: 1%;
   @media (max-width: 1000px) {
-    width: 100%;
+    width: 200%;
+  }
+  @media (max-width: 700px) {
+    width: 150%;
+  }
+  @media (max-width: 500px) {
+    width: 120%;
   }
 `
