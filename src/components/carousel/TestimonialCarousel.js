@@ -109,6 +109,7 @@ const ArrowContainer = styled.div`
 const ArrowImage = styled.img`
   height: 75px;
   width: 75px;
+  cursor: pointer;
   @media (max-width: 1200px) {
     height: 50px;
     width: 50px;
