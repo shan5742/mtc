@@ -14,7 +14,9 @@ export default function BannerCarousel() {
           <ContentContainer>
             <SlideSubheading>{item.subheading}</SlideSubheading>
             <SlideHeading>{item.heading}</SlideHeading>
-            <ButtonPrimary>{item.buttonText}</ButtonPrimary>
+            <ButtonPrimary style={{ marginBottom: 100 }}>
+              {item.buttonText}
+            </ButtonPrimary>
           </ContentContainer>
         ))}
       </Carousel>
